@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem de Eleitores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="exercicio"><a href="index.html">Início</a> </li>
+            <li class="exercicio"><a href="imc.html">IMC</a></li>
+            <li class="exercicio"><a href="antecessor.html"> Antecessor </a></li>
+            <li class="exercicio"><a href="sucessor.html"> Sucessor </a> </li>
+            <li class="exercicio"><a href="dobro.html"> Dobro</a></li>
+            <li class="exercicio"><a href="media.html"> Média de Notas</a> </li>
+            <li class="exercicio"><a href="idade.html"> Idade em Dias</a> </li>
+            <li class="exercicio"><a href="area.html"> Área </a></li>
+            <li class="exercicio"><a href="eleitores.html"> Eleitores</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li class="exercicio"><a href="peso.html"> Peso Ideal</a> </li>
+            <li class="exercicio"><a href="reajuste.html"> Reajuste</a></li>
+            <li class="exercicio"><a href="tabuada.html"> Tabuada</a> </li>
+            <li class="exercicio"><a href="inversa.html"> Ordem inversa</a> </li>
+            <li class="exercicio"><a href="crescente.html"> Ordem crescente</a> </li>
+            <li class="exercicio"><a href="decrescente.html"> Ordem decrescente</a> </li>
+            <li class="exercicio"><a href="nomes.html"> Pesquisar nomes</a> </li>
+        </ul>
+    </nav>
+    <main class="porcentagem">
+        <h1 class="titulo-eleitores">Calcular porcentagem de Votos</h1>
+        <div class="p1">
+            <p class="texto-eleitores">Total de eleitores</p>
+            <p class="texto-eleitores"> Total de votos nulos </p>
+        </div>
+        <div class="input1">
+            <input id="input-eleitores" class="eleitores" type="number"></input>
+            <input id="input-eleitores" class="votosnulos" type="number"></input>
+        </div>
+        <div class="p2">
+            <p class="texto-eleitores">Total de votos brancos </p>
+            <p class="texto-eleitores">Total de votos válidos</p>
+        </div>
+        <div class="input2">
+            <input id="input-eleitores" class="votosbrancos" type="number"></input>
+            <input id="input-eleitores" class="votosvalidos" type="number"></input>
+        </div>
+        <button class="btn-eleitores" onclick="porcentagemvotos()">Calcular</button>
+        <h2 class="porcentagemvotos"></h2>
+    </main>
+
+    <script>
+        function porcentagemvotos() {
+            var totalEleitores = document.querySelector(".eleitores").value
+            var votosNulos = document.querySelector(".votosnulos").value //declarando variável e associando ao input "votosnulos'
+            var votosBrancos = document.querySelector(".votosbrancos").value //declarando variável e associando ao input "votosbrancos"
+            var votosValidos = document.querySelector(".votosvalidos").value //declarando variável e associando ao input "votosvalidos"
+            let porcentagemDeVotosNulos = (100 * (votosNulos / totalEleitores)); //declarando variável porcentagem de votos nulos
+            let porcentagemDeVotosBrancos = (100 * (votosBrancos / totalEleitores)); //declarando variável porcentagem de votos brancos
+            let porcentagemDeVotosValidos = (100 * (votosValidos / totalEleitores)); //declarando variável porcentagem de votos válidos
+            var porcentagemvotos = ("Votos nulos: " + porcentagemDeVotosNulos.toFixed(1) + "%" + "\n" +
+                "Votos brancos: " + porcentagemDeVotosBrancos.toFixed(1) + "%" + "\n" +
+                "Votos válidos: " + porcentagemDeVotosValidos.toFixed(1) + "%" + "\n");
+            document.querySelector(".porcentagemvotos").innerHTML = porcentagemvotos; //executando resultado
+        }
+    </script>
+</body>
+<footer class="paginasmaiores">
+    <p>Por Gabrielly Souza</p>
+    <a href="https://github.com/gabrielly-souza"> <img class="github" src="https://pngimg.com/uploads/github/github_PNG40.png" width="3%"></img>
+    </a>
+</footer>
+
+
+</html>

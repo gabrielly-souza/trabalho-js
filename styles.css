@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Itim&family=Jua&family=Montserrat:wght@400;500;600;700&family=Odibee+Sans&family=Open+Sans:wght@400;700&family=Patrick+Hand&family=Playfair+Display+SC:ital,wght@0,400;1,700&family=Poppins&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Itim&family=Jua&family=Montserrat:wght@400;500;700&family=Odibee+Sans&family=Open+Sans:wght@400;700&family=Patrick+Hand&family=Playfair+Display+SC:ital,wght@0,400;1,700&family=Poppins&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+}
+
+body {
+    color: black;
+    min-height: 100%;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(206, 135, 3);
+    ;
+}
+
+main {
+    min-height: 100%;
+}
+
+
+/* ------ INICIO ------ */
+
+.titulo {
+    margin-top: 70px;
+    font-size: 60px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 484px;
+    top: 55px;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.151));
+}
+
+img {
+    position: relative;
+    text-align: center;
+    left: 730px;
+    bottom: 45px;
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.363));
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.titulo:hover {
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.288));
+}
+
+.github {
+    margin-top: 15px;
+    left: 165px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+}
+
+nav {
+    background: black;
+    padding: 27px;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: orange;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    font-weight: 800;
+}
+
+footer {
+    padding: 5px;
+    position: fixed;
+    text-align: left;
+    left: 15px;
+    bottom: -45px;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+.paginasmaiores {
+    padding: 5px;
+    position: fixed;
+    text-align: left;
+    left: 15px;
+    bottom: -45px;
+}
+
+.paginasmaiores p {
+    margin-top: 15px;
+}
+
+.footernomes {
+    padding: 5px;
+    position: fixed;
+    text-align: left;
+    left: 15px;
+    bottom: -45px;
+}
+
+.footernomes p {
+    margin-top: 15px;
+}
+
+
+/* ------ IMC ------ */
+
+.imc {
+    text-align: center;
+    line-height: 60px;
+}
+
+.secoes-imc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.titulo-imc {
+    margin-top: 30px;
+}
+
+.btn-imc {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+
+.btn-imc:hover {
+    cursor: pointer;
+}
+
+.input-info-imc {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 80px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtituloimc {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* ------ ANTECESSOR ------ */
+
+.antecessor {
+    text-align: center;
+    line-height: 60px;
+}
+
+.titulo-antecessor {
+    margin-top: 65px;
+}
+
+.texto-antecessor {
+    font-size: 25px;
+    text-align: center;
+}
+
+#input-antecessor {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 70px;
+    height: 30px;
+}
+
+.btn-antecessor {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.btn-antecessor:hover {
+    cursor: pointer;
+}
+
+
+/* ------ SUCESSOR ------ */
+
+.sucessor {
+    text-align: center;
+    line-height: 60px;
+}
+
+.titulo-sucessor {
+    margin-top: 60px;
+}
+
+.texto-sucessor {
+    font-size: 25px;
+    text-align: center;
+}
+
+#input-sucessor {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 70px;
+    height: 30px;
+}
+
+.btn-sucessor {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.btn-sucessor:hover {
+    cursor: pointer;
+}
+
+
+/* ------ DOBRO ------ */
+
+.parte-dobro {
+    text-align: center;
+    line-height: 60px;
+}
+
+.titulo-dobro {
+    margin-top: 65px;
+}
+
+.texto-dobro {
+    font-size: 25px;
+    text-align: center;
+}
+
+#input-dobro {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 70px;
+    height: 30px;
+}
+
+.btn-dobro {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.btn-dobro:hover {
+    cursor: pointer;
+}
+
+.dobro {
+    font-size: 28px;
+}
+
+
+/* ------ MEDIA------ */
+
+.parte-media {
+    text-align: center;
+    line-height: 80px;
+}
+
+.titulo-media {
+    margin-top: 60px;
+}
+
+.input-notas {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 180px;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-media {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.btn-media:hover {
+    cursor: pointer;
+}
+
+.media {
+    margin-bottom: 10px;
+}
+
+.resultadomedia {
+    margin-bottom: 60px;
+}
+
+
+/* ------ IDADE------ */
+
+.idade {
+    text-align: center;
+    line-height: 50px;
+}
+
+.titulo-idade {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.texto-idade {
+    font-size: 20px;
+    text-align: center;
+}
+
+#input-idade {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.inputs2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-left: 100px;
+}
+
+.btn-idade {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 55px;
+}
+
+.btn-idade:hover {
+    cursor: pointer;
+}
+
+.idadedias {
+    font-size: 28px;
+}
+
+
+/* ------ AREA ------ */
+
+.parte-area {
+    text-align: center;
+    line-height: 60px;
+}
+
+.titulo-area {
+    margin-top: 70px;
+}
+
+.texto-area {
+    font-size: 25px;
+    text-align: center;
+}
+
+.divtexto {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.divinput {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-left: 50px;
+}
+
+#input-area {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 70px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-area {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.btn-area:hover {
+    cursor: pointer;
+}
+
+.area {
+    font-size: 28px;
+}
+
+
+/* ------ ELEITORES ------ */
+
+.porcentagem {
+    text-align: center;
+    line-height: 60px;
+}
+
+.titulo-eleitores {
+    margin-top: 30px;
+}
+
+.texto-eleitores {
+    font-size: 21px;
+    text-align: center;
+}
+
+#input-eleitores {
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    width: 70px;
+    height: 30px;
+}
+
+.btn-eleitores {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.input1 {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.input2 {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.btn-eleitores:hover {
+    cursor: pointer;
+}
+
+.porcentagemvotos {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+
+/* ------ PESO IDEAL ------ */
+
+.pesoideal {
+    text-align: center;
+    line-height: 60px;
+}
+
+.titulo-peso {
+    margin-top: 60px;
+}
+
+.texto-peso {
+    font-size: 25px;
+    text-align: center;
+}
+
+.input-peso {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-peso {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.btn-peso:hover {
+    cursor: pointer;
+}
+
+.select-peso {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resultado-peso {
+    font-size: 28px;
+}
+
+.textospeso {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.inputspeso {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+/* ------ MEDIA------ */
+
+.parte-media {
+    text-align: center;
+    line-height: 80px;
+}
+
+.titulo-media {
+    margin-top: 50px;
+}
+
+.input-notas {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 180px;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-media {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: -80px;
+    margin-bottom: 15px;
+}
+
+.btn-media:hover {
+    cursor: pointer;
+}
+
+
+/* ------ REAJUSTE ------ */
+
+.reajuste {
+    text-align: center;
+    line-height: 50px;
+}
+
+.titulo-reajuste {
+    margin-top: 50px;
+}
+
+.texto-reajuste {
+    font-size: 20px;
+    text-align: center;
+}
+
+#input-reajuste {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 180px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-reajuste {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 150px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.btn-reajuste:hover {
+    cursor: pointer;
+}
+
+.novoSalario {
+    font-size: 22px;
+}
+
+
+/* ------ TABUADA ------ */
+
+.parte-input {
+    text-align: center;
+    display: flex;
+    margin-top: 60px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulo-tabuada {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.texto-tabuada {
+    font-size: 25px;
+    text-align: center;
+}
+
+#input-tabuada {
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 30px;
+    height: 20px;
+}
+
+.btn-tabuada {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 110px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.btn-tabuada:hover {
+    cursor: pointer;
+}
+
+.tabuada {
+    line-height: none;
+}
+
+.resultado-t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+
+/* ------ ORDEM INVERSA ------ */
+
+.ordeminversa {
+    text-align: center;
+    line-height: 35px;
+}
+
+.titulo-ordemi {
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+#texto-ordemi {
+    font-size: 20px;
+    text-align: center;
+}
+
+#input-ordemi {
+    border-radius: 10px;
+    border: none;
+    padding: 6px;
+    width: 50px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+#btn-ordemi {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 3px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#btn-ordemi:hover {
+    cursor: pointer;
+}
+
+#btn-ordemi2 {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 180px;
+    height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 8px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#btn-ordemi2:hover {
+    cursor: pointer;
+}
+
+.resultado-ordemi {
+    font-size: 30px;
+}
+
+.divinversa {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* ------ NOMES ------ */
+
+.parte-nomes {
+    text-align: center;
+    margin-top: 60px;
+    gap: 1rem;
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.titulo-nomes {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.texto-nomes {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#input-nomes {
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    width: 180px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#input-nomes2 {
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    width: 180px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#btn-nomes {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 110px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#btn-nomes:hover {
+    cursor: pointer;
+}
+
+#btn-nomes2 {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 110px;
+    height: 60px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+#btn-nomes2:hover {
+    cursor: pointer;
+}
+
+.resultado-nomes {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.divnomes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+/* ------ ORDEM CRESCENTE ------ */
+
+.ordemcrescente {
+    text-align: center;
+    line-height: 35px;
+}
+
+.titulo-ordemc {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.texto-ordemc {
+    font-size: 20px;
+    text-align: center;
+}
+
+#input-ordemc {
+    border-radius: 10px;
+    border: none;
+    padding: 6px;
+    width: 50px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+#btn-ordemc {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 3px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+#btn-ordemc:hover {
+    cursor: pointer;
+}
+
+#btn-ordemc2 {
+    border: none;
+    border-radius: 10px;
+    color: orange;
+    background: black;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 8px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#btn-ordemic:hover {
+    cursor: pointer;
+}
+
+.resultado-ordemc {
+    font-size: 30px;
+}
+
+.divcrescente {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

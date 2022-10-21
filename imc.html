@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="exercicio"><a href="index.html">Início</a> </li>
+            <li class="exercicio"><a href="imc.html">IMC</a></li>
+            <li class="exercicio"><a href="antecessor.html"> Antecessor </a></li>
+            <li class="exercicio"><a href="sucessor.html"> Sucessor </a> </li>
+            <li class="exercicio"><a href="dobro.html"> Dobro</a></li>
+            <li class="exercicio"><a href="media.html"> Média de Notas</a> </li>
+            <li class="exercicio"><a href="idade.html"> Idade em Dias</a> </li>
+            <li class="exercicio"><a href="area.html"> Área </a></li>
+            <li class="exercicio"><a href="eleitores.html"> Eleitores</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li class="exercicio"><a href="peso.html"> Peso Ideal</a> </li>
+            <li class="exercicio"><a href="reajuste.html"> Reajuste</a></li>
+            <li class="exercicio"><a href="tabuada.html"> Tabuada</a> </li>
+            <li class="exercicio"><a href="inversa.html"> Ordem inversa</a> </li>
+            <li class="exercicio"><a href="crescente.html"> Ordem crescente</a> </li>
+            <li class="exercicio"><a href="decrescente.html"> Ordem decrescente</a> </li>
+            <li class="exercicio"><a href="nomes.html"> Pesquisar nomes</a> </li>
+        </ul>
+    </nav> <br>
+
+    <main class="imc">
+        <h1 class="titulo-imc">Calcule o seu IMC</h1>
+        <div class="secoes-imc">
+            <div class="parte-altura">
+                <p class="subtituloimc"> Insira a sua altura </p>
+                <input class="input-info-imc" type="number" id="altura" placeholder="Ex: 1.75" required/> <span> m </span>
+            </div>
+            <div class="parte-peso">
+                <p class="subtituloimc"> Insira o seu peso </p>
+                <input class="input-info-imc" type="number" id="peso" placeholder="Ex: 80" required/> <span> kg </span><br>
+            </div>
+        </div>
+        <button class="btn-imc" onclick="calcularIMC()">Calcular</button> <br>
+
+        <p>
+            <h2 id="resultadoimc"></h2>
+        </p>
+    </main>
+    <script>
+        function calcularIMC() {
+            var altura = document.getElementById("altura").value;
+            var peso = document.getElementById("peso").value;
+            var imc = peso / (altura * altura);
+
+            if (imc <= 20.7) {
+                resultadoimc.innerHTML = "Seu IMC é: " + imc.toFixed(1) + ". Abaixo do peso ";
+            }
+            if (imc > 20.7 && imc < 26.4) {
+                resultadoimc.innerHTML = "Seu IMC é: " + imc.toFixed(1) + ". Peso ideal";
+            }
+            if (imc > 26.5 && imc < 27.8) {
+                resultadoimc.innerHTML = "Seu IMC é: " + imc.toFixed(1) + ". Pouco acima do peso";
+            }
+            if (imc > 27.9 && imc < 31.1) {
+                resultadoimc.innerHTML = "Seu IMC é: " + imc.toFixed(1) + ". Acima do peso";
+            }
+            if (imc >= 31.2) {
+                resultadoimc.innerHTML = "Seu IMC é: " + imc.toFixed(1) + ". Obesidade";
+            }
+
+        }
+    </script>
+</body>
+<footer>
+    <p>Por Gabrielly Souza</p>
+    <a href="https://github.com/gabrielly-souza"> <img class="github" src="https://pngimg.com/uploads/github/github_PNG40.png" width="3%"></img>
+    </a>
+</footer>
+
+</html>

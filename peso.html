@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="exercicio"><a href="index.html">Início</a> </li>
+            <li class="exercicio"><a href="imc.html">IMC</a></li>
+            <li class="exercicio"><a href="antecessor.html"> Antecessor </a></li>
+            <li class="exercicio"><a href="sucessor.html"> Sucessor </a> </li>
+            <li class="exercicio"><a href="dobro.html"> Dobro</a></li>
+            <li class="exercicio"><a href="media.html"> Média de Notas</a> </li>
+            <li class="exercicio"><a href="idade.html"> Idade em Dias</a> </li>
+            <li class="exercicio"><a href="area.html"> Área </a></li>
+            <li class="exercicio"><a href="eleitores.html"> Eleitores</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li class="exercicio"><a href="peso.html"> Peso Ideal</a> </li>
+            <li class="exercicio"><a href="reajuste.html"> Reajuste</a></li>
+            <li class="exercicio"><a href="tabuada.html"> Tabuada</a> </li>
+            <li class="exercicio"><a href="inversa.html"> Ordem inversa</a> </li>
+            <li class="exercicio"><a href="crescente.html"> Ordem crescente</a> </li>
+            <li class="exercicio"><a href="decrescente.html"> Ordem decrescente</a> </li>
+            <li class="exercicio"><a href="nomes.html"> Pesquisar nomes</a> </li>
+        </ul>
+    </nav>
+    <main class="pesoideal">
+        <h1 class="titulo-peso">Descubra o seu peso ideal</h1>
+        <div class="textospeso">
+            <p class="texto-peso">Altura:</p>
+            <p class="texto-peso">Sexo:</p>
+        </div>
+        <div class="inputspeso">
+            <input class="input-peso" id="altura" required="required" step="0.000001" type="number" placeholder="Ex: 1.70"></input>
+
+            <select class="select-peso" required="required">
+            <option id="sexo" value="1">Masculino</option>
+            <option id="sexo" value="2">Feminino</option>
+        </select>
+        </div>
+        <button class="btn-peso" onclick="pesoideal()">Calcular</button>
+        <h2 id="resultado-peso">
+        </h2>
+    </main>
+
+    <script>
+        function pesoideal() {
+            let sexo;
+            let altura, pesoIdeal;
+            altura = parseFloat(document.getElementById("altura").value);
+            sexo = Number((document.querySelector("#sexo").value));
+            if (sexo === 1) {
+                pesoIdeal = (72.7 * altura) - 58;
+                document.querySelector("#resultado-peso").textContent = `O seu peso ideal é de: ${pesoIdeal.toFixed(1)}kg`;
+            } else if (sexo === 2) {
+                pesoIdeal = (62.1 * altura) - 44.7;
+                document.querySelector("#resultado-peso").textContent = `O seu peso ideal é de: ${pesoIdeal.toFixed(1)}kg`;
+            } else {
+
+                document.querySelector("#resultado-peso").textContent = `insira um valor válido`;
+            }
+        }
+    </script>
+</body>
+<footer class="paginasmaiores">
+    <p>Por Gabrielly Souza</p>
+    <a href="https://github.com/gabrielly-souza"> <img class="github" src="https://pngimg.com/uploads/github/github_PNG40.png" width="3%"></img>
+    </a>
+</footer>
+
+</html>
